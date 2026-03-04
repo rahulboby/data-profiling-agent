@@ -26,7 +26,6 @@ def displayScoreStats(df):
         </style>
     """, unsafe_allow_html=True)
 
-    st.markdown('<div class="score-title">Data Trust Score</div>', unsafe_allow_html=True)
     # st.markdown('<div class="score-subtitle">Composite score across completeness, uniqueness, outliers, and consistency.</div>', unsafe_allow_html=True)
     
     # 1. Get Scores

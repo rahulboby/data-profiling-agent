@@ -273,14 +273,14 @@ with st.sidebar:
 
         pages = {
             "Data Preview": "Data Preview",
-            "Quality Score": "Score",
-            "Distribution": "Distribution",
-            "Cardinality": "Cardinality",
-            "Duplicates": "Duplicates",
-            "Nulls": "Nulls",
-            "Outliers": "Outliers",
-            "Consistency": "Consistency",
-            "Data Merger": "Merger"
+            "Quality Score": "Data Trust Score",
+            "Distribution": "Value Distribution Audit",
+            "Cardinality": "Cardinality Audit",
+            "Duplicates": "Data Duplicates Audit",
+            "Nulls": "Data Completeness Audit",
+            "Outliers": "Anomaly Audit",
+            "Consistency": "Data Consistency Audit",
+            "Data Merger": "AI Powered Rule based Data Merger (BETA)"
         }
 
         for label, page_id in pages.items():
