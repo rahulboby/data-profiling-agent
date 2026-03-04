@@ -540,28 +540,28 @@ if current_page == "Data Preview":
         memory_mb = df.memory_usage(deep=True).sum() / 1024 / 1024
         st.metric("Memory Usage", f"{memory_mb:.2f} MB")
 
-elif current_page == "Score":
+elif current_page == "Data Trust Score":
     ScM.displayScoreStats(filtered_df)
 
-elif current_page == "Distribution":
+elif current_page == "Value Distribution Audit":
     vdm.displayValueDistributionStats(filtered_df)
 
-elif current_page == "Cardinality":
+elif current_page == "Cardinality Audit":
     cm.displayCardinalityStats(filtered_df)
 
-elif current_page == "Duplicates":
+elif current_page == "Data Duplicates Audit":
     dm.displayDuplicateStats(filtered_df)
 
-elif current_page == "Nulls":
+elif current_page == "Data Completeness Audit":
     nm.displayNullStats(filtered_df)
 
-elif current_page == "Outliers":
+elif current_page == "Anomaly Audit":
     om.displayOutlierStats(filtered_df)
 
-elif current_page == "Consistency":
+elif current_page == "Data Consistency Audit":
     ConM.displayConsistencyStats(filtered_df)
 
-elif current_page == "Merger":
+elif current_page == "AI Powered Rule based Data Merger (BETA)":
     st.warning("BETA feature: Data Merger uses weighted scoring. This feature performs best with datasets under 5,000 rows.")
     display_merge_data(filtered_df)
 
