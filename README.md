@@ -1,6 +1,4 @@
-# Data Profiling Agent
-
-Canonical code now lives in `dq_agent_streamlit_app/`.
+Link: https://dataveritas.streamlit.app/
 
 ## Project Layout
 
